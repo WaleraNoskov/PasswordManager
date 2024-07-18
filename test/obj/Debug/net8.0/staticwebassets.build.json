@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "J+a07R15wa2mpr4VLH+kevgcrJ0Xf3iS4LWagUgHDM8=",
+  "Source": "PasswordManager.Web",
+  "BasePath": "_content/PasswordManager.Web",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
