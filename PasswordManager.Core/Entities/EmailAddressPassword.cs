@@ -10,6 +10,8 @@ public class EmailAddressPassword : BaseEntity<int>
         Password = new Password(password);
     }
 
+    public EmailAddressPassword() { }
+
     public EmailAddress EmailAddress { get; }
 
     public Password Password { get; }

@@ -16,7 +16,7 @@ namespace PasswordManager.Infrastructure.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "8.0.7");
 
-            modelBuilder.Entity("PasswordManager.Core.WebAddressPassword", b =>
+            modelBuilder.Entity("PasswordManager.Core.EmailAddressPassword", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -38,32 +38,32 @@ namespace PasswordManager.Infrastructure.Migrations
                     b.ToTable("WebLinkPasswords");
                 });
 
-            modelBuilder.Entity("PasswordManager.Core.WebAddressPassword", b =>
+            modelBuilder.Entity("PasswordManager.Core.EmailAddressPassword", b =>
                 {
                     b.OwnsOne("PasswordManager.Core.EmailAddress", "EmailAddress", b1 =>
                         {
-                            b1.Property<int>("WebAddressPasswordId")
+                            b1.Property<int>("EmailAddressPasswordId")
                                 .HasColumnType("INTEGER");
 
-                            b1.HasKey("WebAddressPasswordId");
+                            b1.HasKey("EmailAddressPasswordId");
 
                             b1.ToTable("WebAddressPasswords");
 
                             b1.WithOwner()
-                                .HasForeignKey("WebAddressPasswordId");
+                                .HasForeignKey("EmailAddressPasswordId");
                         });
 
                     b.OwnsOne("PasswordManager.Core.Password", "Password", b1 =>
                         {
-                            b1.Property<int>("WebAddressPasswordId")
+                            b1.Property<int>("EmailAddressPasswordId")
                                 .HasColumnType("INTEGER");
 
-                            b1.HasKey("WebAddressPasswordId");
+                            b1.HasKey("EmailAddressPasswordId");
 
                             b1.ToTable("WebAddressPasswords");
 
                             b1.WithOwner()
-                                .HasForeignKey("WebAddressPasswordId");
+                                .HasForeignKey("EmailAddressPasswordId");
                         });
 
                     b.Navigation("EmailAddress")

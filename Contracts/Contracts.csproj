@@ -7,11 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MediatR" Version="12.3.0" />
+    <ProjectReference Include="..\PasswordManager.Core\PasswordManager.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\PasswordManager.Core\PasswordManager.Core.csproj" />
+    <PackageReference Include="MediatR" Version="11.1.0" />
   </ItemGroup>
 
 </Project>

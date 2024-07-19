@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace PasswordManager.Web;
 
 [ApiController]
-[Route("[controller]")]
+[Route("[controller]/[action]")]
 public class EmailAddressPasswordController : Controller
 {
     private readonly IMediator mediator;

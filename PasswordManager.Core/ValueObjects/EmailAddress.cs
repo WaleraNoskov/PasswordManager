@@ -15,4 +15,6 @@ public class EmailAddress : ValueObject
         else
             throw new ArgumentException("Invalid email format");
     }
+
+    public EmailAddress() { }
 }

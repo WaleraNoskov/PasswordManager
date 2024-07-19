@@ -10,6 +10,8 @@ public class WebLinkPassword : BaseEntity<int>
         Password = new Password(password);
     }
 
+    public WebLinkPassword() {}
+
     public WebLink WebLink { get; set; }
 
     public Password Password { get; set; }

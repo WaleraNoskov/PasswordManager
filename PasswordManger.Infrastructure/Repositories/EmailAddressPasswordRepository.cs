@@ -30,8 +30,6 @@ public class EmailAddressPasswordRepository : IEmailAddressPasswordRepository
 
     public async Task InsertAsync(EmailAddressPassword entity)
     {
-        var existing = await _context.WebLinkPasswords.FindAsync(entity);
-        if(existing != null) throw new EntityAlreadyExistException(entity.Id);
         _context.Add(entity);
         await _context.SaveChangesAsync();
     }
