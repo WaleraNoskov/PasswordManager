@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordManager.Infrastruct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PasswordManager.Application", "PasswordManager.Application\PasswordManager.Application.csproj", "{8C30869F-F816-48F8-BAB4-6DD51B5A9F40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contracts", "Contracts\Contracts.csproj", "{E0CE7ACD-A61C-4C0A-B37E-5966F71766EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{8C30869F-F816-48F8-BAB4-6DD51B5A9F40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C30869F-F816-48F8-BAB4-6DD51B5A9F40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C30869F-F816-48F8-BAB4-6DD51B5A9F40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0CE7ACD-A61C-4C0A-B37E-5966F71766EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0CE7ACD-A61C-4C0A-B37E-5966F71766EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0CE7ACD-A61C-4C0A-B37E-5966F71766EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0CE7ACD-A61C-4C0A-B37E-5966F71766EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

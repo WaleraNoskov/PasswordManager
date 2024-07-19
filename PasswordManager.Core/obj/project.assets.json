@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "CSharpFunctionalExtensions/2.42.5": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/CSharpFunctionalExtensions.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/CSharpFunctionalExtensions.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore/8.0.7": {
         "type": "package",
         "dependencies": {
@@ -202,6 +215,35 @@
     }
   },
   "libraries": {
+    "CSharpFunctionalExtensions/2.42.5": {
+      "sha512": "Do9Q7Nyfx2G4HRt96aB6yoP5Z9ic3jqBHLrf35tULzsWlFoBlkQZT62aXCiv7UmVmF56OUR+a3JoSSs140hfHQ==",
+      "type": "package",
+      "path": "csharpfunctionalextensions/2.42.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "csharpfunctionalextensions.2.42.5.nupkg.sha512",
+        "csharpfunctionalextensions.nuspec",
+        "lib/net40/CSharpFunctionalExtensions.dll",
+        "lib/net40/CSharpFunctionalExtensions.pdb",
+        "lib/net40/CSharpFunctionalExtensions.xml",
+        "lib/net45/CSharpFunctionalExtensions.dll",
+        "lib/net45/CSharpFunctionalExtensions.pdb",
+        "lib/net45/CSharpFunctionalExtensions.xml",
+        "lib/net461/CSharpFunctionalExtensions.dll",
+        "lib/net461/CSharpFunctionalExtensions.pdb",
+        "lib/net461/CSharpFunctionalExtensions.xml",
+        "lib/net5.0/CSharpFunctionalExtensions.dll",
+        "lib/net5.0/CSharpFunctionalExtensions.pdb",
+        "lib/net5.0/CSharpFunctionalExtensions.xml",
+        "lib/net6.0/CSharpFunctionalExtensions.dll",
+        "lib/net6.0/CSharpFunctionalExtensions.pdb",
+        "lib/net6.0/CSharpFunctionalExtensions.xml",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.dll",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.pdb",
+        "lib/netstandard2.0/CSharpFunctionalExtensions.xml"
+      ]
+    },
     "Microsoft.EntityFrameworkCore/8.0.7": {
       "sha512": "UOyPNAgyzw/E4hUCurqvZxi0WWVLQAGZuntFPzkTXtvJLTqRjKvokvhv+XazAUSODLsU1DZ67GjZ4mT9d82+0g==",
       "type": "package",
@@ -557,6 +599,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "CSharpFunctionalExtensions >= 2.42.5",
       "Microsoft.EntityFrameworkCore >= 8.0.7"
     ]
   },
@@ -566,11 +609,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
+      "projectUniqueName": "c:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
       "projectName": "PasswordManager.Core",
-      "projectPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
+      "projectPath": "c:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
       "packagesPath": "C:\\Users\\rahda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\obj\\",
+      "outputPath": "c:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\rahda\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -602,6 +645,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "CSharpFunctionalExtensions": {
+            "target": "Package",
+            "version": "[2.42.5, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.7, )"

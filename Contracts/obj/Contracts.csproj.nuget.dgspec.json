@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj": {}
+    "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\Contracts\\Contracts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj": {
+    "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\Contracts\\Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
-        "projectName": "PasswordManager.Core",
-        "projectPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\PasswordManager.Core.csproj",
+        "projectUniqueName": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\Contracts\\Contracts.csproj",
+        "projectName": "Contracts",
+        "projectPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\Contracts\\Contracts.csproj",
         "packagesPath": "C:\\Users\\rahda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\PasswordManager.Core\\obj\\",
+        "outputPath": "C:\\Users\\rahda\\OneDrive\\Документы\\projects\\test-jun\\Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rahda\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,16 +42,6 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "dependencies": {
-            "CSharpFunctionalExtensions": {
-              "target": "Package",
-              "version": "[2.42.5, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[8.0.7, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

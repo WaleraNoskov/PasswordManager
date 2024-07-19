@@ -4,7 +4,7 @@ namespace PasswordManager.Core;
 
 public class EmailAddress : ValueObject
 {
-    public string Address { get; }
+    public string Address { get; } = string.Empty;
 
     public EmailAddress(string emailAddress)
     {
@@ -14,10 +14,5 @@ public class EmailAddress : ValueObject
             Address = emailAddress;
         else
             throw new ArgumentException("Invalid email format");
-    }
-
-    public EmailAddress()
-    {
-        Address = string.Empty;
     }
 }

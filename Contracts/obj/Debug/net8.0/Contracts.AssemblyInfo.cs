@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("PasswordManager.Core")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Contracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d53edd5cf4b6c5cdc09a94cea22356b453c85b39")]
-[assembly: System.Reflection.AssemblyProductAttribute("PasswordManager.Core")]
-[assembly: System.Reflection.AssemblyTitleAttribute("PasswordManager.Core")]
+[assembly: System.Reflection.AssemblyProductAttribute("Contracts")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Contracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Создано классом WriteCodeFragment MSBuild.
