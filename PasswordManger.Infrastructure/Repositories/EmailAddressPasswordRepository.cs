@@ -3,10 +3,10 @@ using PasswordManager.Core;
 
 namespace PasswordManager.Infrastructure;
 
-public class WebAddressPasswordRepository : IWebAddressPasswordRepository
+public class EmailAddressPasswordRepository : IEmailAddressPasswordRepository
 {
     private readonly PasswordManagerDbContext _context;
-    public WebAddressPasswordRepository(PasswordManagerDbContext context)
+    public EmailAddressPasswordRepository(PasswordManagerDbContext context)
     {
         _context = context;
     }
@@ -18,17 +18,17 @@ public class WebAddressPasswordRepository : IWebAddressPasswordRepository
         await _context.SaveChangesAsync();
     }
 
-    public IQueryable<WebAddressPassword> GetAll()
+    public IQueryable<EmailAddressPassword> GetAll()
     {
-        return _context.Set<WebAddressPassword>();
+        return _context.Set<EmailAddressPassword>();
     }
 
-    public async Task<WebAddressPassword?> GetById(int id)
+    public async Task<EmailAddressPassword?> GetById(int id)
     {
         return await _context.WebAddressPasswords.FirstOrDefaultAsync(e => e.Id == id);
     }
 
-    public async Task Insert(WebAddressPassword entity)
+    public async Task InsertAsync(EmailAddressPassword entity)
     {
         var existing = await _context.WebLinkPasswords.FindAsync(entity);
         if(existing != null) throw new EntityAlreadyExistException(entity.Id);
@@ -36,7 +36,7 @@ public class WebAddressPasswordRepository : IWebAddressPasswordRepository
         await _context.SaveChangesAsync();
     }
 
-    public async Task Update(WebAddressPassword entity)
+    public async Task Update(EmailAddressPassword entity)
     {
         _context.Update(entity);
         await _context.SaveChangesAsync();

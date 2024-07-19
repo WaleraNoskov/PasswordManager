@@ -2,9 +2,9 @@
 
 namespace PasswordManager.Core;
 
-public class WebAddressPassword : BaseEntity<int>
+public class EmailAddressPassword : BaseEntity<int>
 {
-    private WebAddressPassword(string emailAddress, string password)
+    private EmailAddressPassword(string emailAddress, string password)
     {
         EmailAddress = new EmailAddress(emailAddress);
         Password = new Password(password);
@@ -14,7 +14,7 @@ public class WebAddressPassword : BaseEntity<int>
 
     public Password Password { get; }
 
-    public static Result<WebAddressPassword> Create(string email, string password)
+    public static Result<EmailAddressPassword> Create(string email, string password)
     {
         try
         {
@@ -22,7 +22,7 @@ public class WebAddressPassword : BaseEntity<int>
         }
         catch (Exception ex)
         {
-            return Result.Failure<WebAddressPassword>(ex.Message);
+            return Result.Failure<EmailAddressPassword>(ex.Message);
         }
 
         try
@@ -31,10 +31,10 @@ public class WebAddressPassword : BaseEntity<int>
         }
         catch (Exception ex)
         {
-            return Result.Failure<WebAddressPassword>(ex.Message);
+            return Result.Failure<EmailAddressPassword>(ex.Message);
         }
 
-        var webAddressPassword = new WebAddressPassword(email, password);
-        return Result.Success(webAddressPassword);
+        var emailAddressPassword = new EmailAddressPassword(email, password);
+        return Result.Success(emailAddressPassword);
     }
 }

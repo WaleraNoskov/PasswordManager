@@ -1,16 +1,19 @@
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using PasswordManager.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<PasswordManagerDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("PasswordManagerDbConnection"), 
     builder => builder.MigrationsAssembly("PasswordManager.Infrastructure")));
+
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblyContaining<Program>());
+
+builder.Services.AddSingleton<IEmailAddressPasswordRepository, EmailAddressPasswordRepository>();
 
 var app = builder.Build();
 

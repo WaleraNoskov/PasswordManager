@@ -5,7 +5,7 @@ namespace PasswordManager.Infrastructure;
 
 public class PasswordManagerDbContext : DbContext
 {
-    public DbSet<WebAddressPassword> WebAddressPasswords { get; set; }
+    public DbSet<EmailAddressPassword> WebAddressPasswords { get; set; }
     public DbSet<WebLinkPassword> WebLinkPasswords { get; set; }
 
     public PasswordManagerDbContext(DbContextOptions<PasswordManagerDbContext> options) : base(options) {}
@@ -19,7 +19,7 @@ public class PasswordManagerDbContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
-        builder.Entity<WebAddressPassword>(options =>
+        builder.Entity<EmailAddressPassword>(options =>
         {
             options.HasKey(e => e.Id);
             options.OwnsOne(e => e.EmailAddress);
